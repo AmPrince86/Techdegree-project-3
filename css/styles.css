@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
 }
+
 body {
    font-family: 'Merriweather', serif;
    font-size: 14px;
-   /* margin: 0; */
 }
 
 /* HEADER */
@@ -16,42 +16,36 @@ header {
 }
 
 h2 {
-    border: 0px solid white;
+
     padding: 0 10px 0 10px;
     text-transform: uppercase;
 }
 
 /* NEWSLETTER-HEADER */
-div {
+.signup {
+    display: inline;
     border-bottom: 4px solid #2E3846;
-    margin-bottom: 0.2rem;
     text-align: center;
 }
 
-p {
-    border: 0px solid green;
-    margin-bottom: 1.5rem;
-}
 /* MAIN-FORM */
 main {
     border-top: 2px solid #2E3846;
+    margin-bottom: 0.4rem;
 }
 
-fieldset {
+.form1 {
     border: none;
     display: flex;
     flex-direction: column;
-    border: 0px solid purple;
-    max-width: 300px;
     margin: 15px auto;
-    padding: 10px 20px;
+    border-bottom: 2px solid #2E3846;
 }
 
-::placeholder {
-    border: 0px solid blue;
-    color: rgb(189, 186, 186);
-    font-size: 12px;
+input::placeholder {
+    color: rgb(189, 186, 186);  
     font-style: italic;
+    margin-bottom: 10px;
     text-align: end;
 }
 
@@ -68,10 +62,10 @@ label {
 input, 
 select,
 textarea {
-    padding-top: 25px;
+    padding: 1.0rem;
     background-color: #e8eeef; 
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     margin-bottom: 8px; 
 }
 
@@ -83,13 +77,15 @@ input:focus {
     width: 50%;
 }
 
-.form1 {
-    border-bottom: 2px solid #2E3846;
-    padding: 0  8px 20px 8px;
+.form2 {
+    border: none;
+    line-height: 2em;
 }
 
-::checkbox {
-    border: 2px solid orange;
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline;
+	padding-left: 15px;
 }
 
 /* FOOTER */
