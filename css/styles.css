@@ -4,7 +4,8 @@
 
 body {
    font-family: 'Merriweather', serif;
-   font-size: 14px;
+   font-size: 15px;
+   margin: 0;
 }
 
 /* HEADER */
@@ -15,22 +16,22 @@ header {
     text-align: center;
 }
 
-h2 {
-
+h1 {
     padding: 0 10px 0 10px;
     text-transform: uppercase;
 }
 
 /* NEWSLETTER-HEADER */
-.signup {
-    display: inline;
-    border-bottom: 4px solid #2E3846;
+div {
+    /* border-bottom: 6px double #2E3846; */
     text-align: center;
+    padding: 10px;
+
 }
 
 /* FORM */
 form {
-    border-top: 2px solid #2E3846;
+    border-top: 6px double #2E3846;
     margin-bottom: 0.4rem;
 }
 
@@ -88,7 +89,26 @@ input[type="radio"] + label {
 	padding-left: 15px;
 }
 
+textarea {
+    width: 100%;
+    padding: 35px;
+}
+
+button {
+    background: #52babe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+    width: 100%;
+}
+
 /* FOOTER */
+
 
 /* MEDIA QUERIES 768PX */
 @media (min-width: 768px) {
