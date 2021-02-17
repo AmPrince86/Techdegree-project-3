@@ -9,6 +9,13 @@ body {
    max-width: 768px;
 }
 
+ .w-text {
+     color: rgb(189, 186, 186);
+ }
+
+  .b-text, label {
+      color: #2E3846;
+  }
 /********* HEADER **********/
 header {
     background: #2E3846;
