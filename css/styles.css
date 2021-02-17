@@ -48,13 +48,17 @@ legend {
 
 .contact-info {
     border: none;
-    display: flex;
-    flex-direction: column;
     margin: 15px auto;
     border-bottom: 2px solid #2E3846;   
 }
 
-.contact-info input {
+.contact-info .flex-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info input,
+.contact-info select {
     width: 100%;
 }
 
@@ -130,13 +134,28 @@ footer {
 
 /* MEDIA QUERIES 760PX */
 @media (min-width: 768px) {
-    /* #container {
-        margin: 0 auto;
-        width: 70%;
-    } */
-
+    
     .contact-info .flex-pair {
         display: flex;
         flex-direction: row;
     }
+
+    .flex-pair label {
+        flex-basis: 25%;
+    }
+
+    .flex-pair input, select {
+        flex-basis: 75%;
+    }
+
+    .flex #zip {
+        flex-basis: 25%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        margin-top: 5px;
+    }
+
 }
