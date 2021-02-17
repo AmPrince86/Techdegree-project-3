@@ -88,12 +88,12 @@ textarea {
     margin-bottom: 8px;
 }
 
-input:focus {
-    color: #2E3846;
+input[type="text"]:focus {
+    color: #33373b;
 }
 
 #zip {
-    width: 25%;
+    width: 50%;
 }
 
 #state {
