@@ -5,10 +5,11 @@
 body {
    font-family: 'Merriweather', serif;
    font-size: 15px;
-   margin: 0;
+   margin: 0 auto;
+   max-width: 768px;
 }
 
-/* HEADER */
+/********* HEADER **********/
 header {
     background: #2E3846;
     border: 1px solid #2E3846;
@@ -21,20 +22,24 @@ h1 {
     text-transform: uppercase;
 }
 
-/* NEWSLETTER-HEADER */
+/******** NEWSLETTER-HEADER **********/
 .sign-up {
     /* border-bottom: 6px double #2E3846; */
     text-align: center;
     padding: 10px;
 }
 
-/* FORM */
+/******** CONTACT-FORM *********/
 form {
     border-top: 6px double #2E3846;
-    margin-bottom: 0.4rem;
 }
 
-.form1 {
+legend {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contact-info {
     border: none;
     display: flex;
     flex-direction: column;
@@ -43,46 +48,44 @@ form {
 }
 
 input::placeholder {
-    color: rgb(189, 186, 186);  
+    color: rgb(189, 186, 186);
     font-style: italic;
     margin-bottom: 10px;
     text-align: end;
 }
 
-legend {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.form2 label {
-    display: block;
-}
-
-label {
-    margin: 6px 0 6px 0;
-}
-
-input, 
+input,
 select,
 textarea {
     padding: 1.0rem;
-    background-color: #e8eeef; 
+    background-color: #e8eeef;
     border: none;
     border-radius: 5px;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
 }
 
 input:focus {
     color: #2E3846;
 }
 
-#address4 {
-    width: 50%;
+#zip {
+    width: 25%;
 }
 
-.form2 {
+#state {
+    color: rgb(189, 186, 186);
+    font-family: 'Merriweather', serif;
+}
+
+/******* NEWS-FORM *******/
+.news-info {
     border: none;
     line-height: 2em;
+}
+
+.news-info label {
+    display: block;
+    margin: 6px 0 6px 0;
 }
 
 input[type="checkbox"] + label,
@@ -109,15 +112,15 @@ button {
     width: 100%;
 }
 
-/* FOOTER */
+/********* FOOTER **********/
 footer {
     text-align: center;
 }
 
 /* MEDIA QUERIES 760PX */
 @media (min-width: 768px) {
-    #container {
-        max-width: 500px;
+    /* #container {
         margin: 0 auto;
-    }
+        width: 70%;
+    } */
 }
