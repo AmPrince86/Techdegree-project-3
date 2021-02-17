@@ -51,7 +51,11 @@ legend {
     display: flex;
     flex-direction: column;
     margin: 15px auto;
-    border-bottom: 2px solid #2E3846;
+    border-bottom: 2px solid #2E3846;   
+}
+
+.contact-info input {
+    width: 100%;
 }
 
 input::placeholder {
@@ -130,4 +134,9 @@ footer {
         margin: 0 auto;
         width: 70%;
     } */
+
+    .contact-info .flex-pair {
+        display: flex;
+        flex-direction: row;
+    }
 }
